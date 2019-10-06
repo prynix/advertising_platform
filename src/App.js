@@ -4,9 +4,9 @@ import React from 'react';
 import 'semantic-ui-css/semantic.min.css';
 import { Grid, Card, Image } from 'semantic-ui-react';
 
-const GridExampleEqualWidthRow = () => (
+const GridComp = () => (
    
-        <Grid divided='vertically'>
+  <Grid divided='vertically'>
     <Grid.Row columns={6}>
       <Grid.Column  textAlign='center'>
         <Card image="/logo.png" />
@@ -34,4 +34,4 @@ const GridExampleEqualWidthRow = () => (
   </Grid>
 )
 
-export default GridExampleEqualWidthRow
+export default GridComp
