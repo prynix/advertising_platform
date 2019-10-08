@@ -1,16 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Logo } from './Home';
-import { WorkTogetherButton } from '../src/components/WorkTogetherButton';
+import { Dashboard } from '../src/pages/dashboard';
 
 
 class App extends React.Component {
     render() {
         return (
             <div>
-                <Logo />
-                <WorkTogetherButton />
-
+                <Dashboard />
             </div>
         );
     }
