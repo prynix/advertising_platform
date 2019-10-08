@@ -54,7 +54,7 @@ export class AdvertiserDashboard extends Component {
                 </Grid.Row>
                 <Grid.Row>
                     <CampaignClicksCard />
-                    < ImpressionsNumberCard />
+                    <ImpressionsNumberCard />
                 </Grid.Row>
             </Grid>
         )

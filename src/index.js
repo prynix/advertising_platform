@@ -4,19 +4,24 @@ import { AdvertiserDashboard } from '../src/pages/AdvertiserDashboard';
 import Amplify from 'aws-amplify'
 import config from './aws-exports'
 import { withAuthenticator } from 'aws-amplify-react';
+import { CustomSignUp } from "../src/components/SignUp";
+import { Authenticator } from "aws-amplify-react/dist/Auth";
 
 Amplify.configure(config)
 
-class App extends React.Component {
+class AppWithAuth extends React.Component {
     render() {
         return (
             <div>
-                    <AdvertiserDashboard />
+                <Authenticator hide={[CustomSignUp]} amplifyConfig={config}>
+                <CustomSignUp />
+                {/* <AdvertiserDashboard /> */}
+                </Authenticator>
             </div>
         );
     }
 }
 
-const AppWithAuth = withAuthenticator(App, true);
+// const AppWithAuth = withAuthenticator(App, true);
 
 ReactDOM.render(<AppWithAuth />, document.getElementById('root'));
