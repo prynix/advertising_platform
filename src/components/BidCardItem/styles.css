@@ -3,3 +3,9 @@
     text-decoration: underline;
     text-align: center;
 }
+
+.bidCardItem {
+    box-shadow: -20px 10px 10px 10px red;
+    border-top: 1px solid rgba(34,36,38,.1) !important;
+    border-bottom: 1px solid rgba(34,36,38,.1) !important;
+}

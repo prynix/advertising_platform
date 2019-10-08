@@ -1,11 +1,10 @@
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
-import { Grid, Card } from 'semantic-ui-react';
-import { Logo } from '../../components/Logo';
 import { BidCardItem } from '../BidCardItem';
+import './styles.css'
 
-export const Test = () => {
+export const BidsCarousel = () => {
     const handleOnDragStart = e => e.preventDefault()
     
     const responsive = {
@@ -14,18 +13,19 @@ export const Test = () => {
     }
 
     return (
-        <AliceCarousel 
-            responsive={responsive}
-            mouseDragEnabled >
-            <BidCardItem onDragStart={handleOnDragStart} />
-            <BidCardItem onDragStart={handleOnDragStart} />
-            <BidCardItem onDragStart={handleOnDragStart} />
-            <BidCardItem onDragStart={handleOnDragStart} />
-            <BidCardItem onDragStart={handleOnDragStart} />
-            <BidCardItem onDragStart={handleOnDragStart} />
-            <BidCardItem onDragStart={handleOnDragStart} />
-            <BidCardItem onDragStart={handleOnDragStart} />
-            <BidCardItem onDragStart={handleOnDragStart} />
-        </AliceCarousel>
+            <AliceCarousel 
+                className='bidCarousel'
+                responsive={responsive}
+                mouseDragEnabled >
+                <BidCardItem onDragStart={handleOnDragStart} />
+                <BidCardItem onDragStart={handleOnDragStart} />
+                <BidCardItem onDragStart={handleOnDragStart} />
+                <BidCardItem onDragStart={handleOnDragStart} />
+                <BidCardItem onDragStart={handleOnDragStart} />
+                <BidCardItem onDragStart={handleOnDragStart} />
+                <BidCardItem onDragStart={handleOnDragStart} />
+                <BidCardItem onDragStart={handleOnDragStart} />
+                <BidCardItem onDragStart={handleOnDragStart} />
+            </AliceCarousel>
     )
 }

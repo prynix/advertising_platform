@@ -2,10 +2,14 @@ import React, { Component } from 'react';
 //import logo from './logo.svg';
 import 'semantic-ui-css/semantic.min.css';
 import './styles.css';
-import { Grid, Card  } from 'semantic-ui-react';
+import { Grid, Card, Divider, Container, Segment } from 'semantic-ui-react';
 import { Logo } from '../../components/Logo';
-import { Test } from '../../components/BidsCarousel';
+import { BidsCarousel } from '../../components/BidsCarousel';
 import { WorkTogetherButton } from '../../components/WorkTogetherButton';
+import { AskForRevShareButton } from '../../components/AskForRevShareButton';
+import { AddTrafficSourceButton} from '../../components/AddTrafficSourceButton';
+import { PromoteInChatButton } from '../../components/PromoteInChatButton';
+import { StopCampaignButton } from '../../components/StopCampaignButton';
 
 export class Dashboard extends Component {
     render() {
@@ -34,7 +38,15 @@ export class Dashboard extends Component {
                     <Grid.Column textAlign='center'><Card link header='Publisher Name' /></Grid.Column>
                 </Grid.Row>
                 <Grid.Row>
-                    <Test />
+                    <BidsCarousel />
+                </Grid.Row>
+                <Grid.Row>
+                    <Segment>
+                        <AskForRevShareButton />
+                        <AddTrafficSourceButton />
+                        <PromoteInChatButton />
+                        <StopCampaignButton />
+                    </Segment>
                 </Grid.Row>
             </Grid>
         )

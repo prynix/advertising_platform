@@ -1,11 +1,11 @@
 import React from 'react';
-import 'semantic-ui-css/semantic.min.css';
+// import 'semantic-ui-css/semantic.min.css';
 import { Card, Image, Button } from 'semantic-ui-react';
 import IntelLogo from '../../assets/intel.png';
 import './styles.css';
 
 export const BidCardItem = (props) => (
-    <Card>
+    <Card className='bidCardItem'>
         <Card.Content>
             <Image
                 floated='left'
@@ -24,10 +24,6 @@ export const BidCardItem = (props) => (
             <Card.Description>
                 Our Company provides and amazing  product that has the abillity to transformhe cultur of indaviduals to many cartirias....           
             </Card.Description>
-        </Card.Content>
-        <Card.Content extra>
-
-
         </Card.Content>
     </Card>
 )
