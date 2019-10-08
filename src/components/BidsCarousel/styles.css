@@ -1,0 +1,11 @@
+.alice-carousel {
+    /* background-color:  rgba(34,36,38,.1); */
+    padding-top: 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(34,36,38,.1);
+}
+
+.alice-carousel__wrapper {
+    padding-bottom: 10px;
+}

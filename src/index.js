@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Logo, WorkTogether} from './Home';
+import { AdvertiserDashboard } from '../src/pages/AdvertiserDashboard';
+
 
 class App extends React.Component {
     render() {
         return (
             <div>
-                <Logo />
-                <WorkTogether />
-
+                <AdvertiserDashboard />
             </div>
         );
     }
