@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 //import logo from './logo.svg';
 import 'semantic-ui-css/semantic.min.css';
 import './styles.css';
-import { Grid, Card, Divider, Container, Segment } from 'semantic-ui-react';
+import { Grid, Card, Segment } from 'semantic-ui-react';
 import { Logo } from '../../components/Logo';
 import { BidsCarousel } from '../../components/BidsCarousel';
 import { WorkTogetherButton } from '../../components/WorkTogetherButton';
@@ -14,7 +14,7 @@ import { MoneyEarnedCard } from '../../components/MoneyEarnedCard';
 import { CampaignClicksCard } from '../../components/CampaignClicksCard';
 import { ImpressionsNumberCard } from '../../components/ImpressionsNumberCard';
 
-export class Dashboard extends Component {
+export class AdvertiserDashboard extends Component {
     render() {
         return (
             <Grid columns='equal'>
