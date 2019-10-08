@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "advertisingplatform-dev-20191008151634-authRole",
+            "UnauthRoleArn": "arn:aws:iam::917733420865:role/advertisingplatform-dev-20191008151634-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::917733420865:role/advertisingplatform-dev-20191008151634-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "advertisingplatform-dev-20191008151634-deployment",
+            "UnauthRoleName": "advertisingplatform-dev-20191008151634-unauthRole",
+            "StackName": "advertisingplatform-dev-20191008151634",
+            "StackId": "arn:aws:cloudformation:us-east-1:917733420865:stack/advertisingplatform-dev-20191008151634/8653fd40-ea08-11e9-96bc-0e91a2a31d14"
+        },
+        "categories": {
+            "auth": {
+                "advertisingplatform2ee26053": {}
+            }
+        }
+    }
+}

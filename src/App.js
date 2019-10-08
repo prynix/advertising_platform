@@ -11,12 +11,12 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                    <AdvertiserDashboard />
+                <AdvertiserDashboard />
             </div>
         );
     }
 }
 
-const AppWithAuth = withAuthenticator(App, true);
+export default withAuthenticator(App, true)
 
-ReactDOM.render(<AppWithAuth />, document.getElementById('root'));
+// ReactDOM.render(<AppWithAuth />, document.getElementById('root'));

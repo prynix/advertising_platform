@@ -1,0 +1,9 @@
+{
+	"auth": {
+		"advertisingplatform2ee26053": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	}
+}
