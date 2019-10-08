@@ -10,6 +10,9 @@ import { AskForRevShareButton } from '../../components/AskForRevShareButton';
 import { AddTrafficSourceButton} from '../../components/AddTrafficSourceButton';
 import { PromoteInChatButton } from '../../components/PromoteInChatButton';
 import { StopCampaignButton } from '../../components/StopCampaignButton';
+import { MoneyEarnedCard } from '../../components/MoneyEarnedCard';
+import { CampaignClicksCard } from '../../components/CampaignClicksCard';
+import { ImpressionsNumberCard } from '../../components/ImpressionsNumberCard';
 
 export class Dashboard extends Component {
     render() {
@@ -47,6 +50,11 @@ export class Dashboard extends Component {
                         <PromoteInChatButton />
                         <StopCampaignButton />
                     </Segment>
+                        <MoneyEarnedCard />
+                </Grid.Row>
+                <Grid.Row>
+                    <CampaignClicksCard />
+                    < ImpressionsNumberCard />
                 </Grid.Row>
             </Grid>
         )
