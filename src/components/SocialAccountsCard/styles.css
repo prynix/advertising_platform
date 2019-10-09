@@ -1,0 +1,8 @@
+.SocialAccountsCard .content .header, .SocialAccountsCard .content .meta{
+    position: relative;
+    margin: auto;
+    top: 40%;
+}
+.SocialAccountsCard .content {
+    padding: 0em 0em !important;
+}

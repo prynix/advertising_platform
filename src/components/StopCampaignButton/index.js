@@ -7,7 +7,7 @@ import { Button } from 'semantic-ui-react';
 export class StopCampaignButton extends Component {
     render() {
         return (
-            <Button size='big' className='stopCampaignButtonStyle' color='red'>
+            <Button  size='huge' className='stopCampaignButtonStyle' color='red'>
                 Stop Campaign
             </Button>
         )

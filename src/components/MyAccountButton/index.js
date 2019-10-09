@@ -7,7 +7,7 @@ import { Grid, Card } from 'semantic-ui-react';
 export class MyAccountButton extends Component {
     render() {
         return (
-            <Card link header='My Account'  />
+            <Card className='MyAccountButton' link header='My Account' />
             )
     }
 }

@@ -1,0 +1,8 @@
+.TotalClicksCard .content .header, .TotalClicksCard .content .meta{
+    position: relative;
+    margin: auto;
+    top: 40%;
+}
+.TotalClicksCard .content {
+    padding: 0em 0em !important;
+}

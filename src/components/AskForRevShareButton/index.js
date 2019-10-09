@@ -7,7 +7,7 @@ import { Button } from 'semantic-ui-react';
 export class AskForRevShareButton extends Component {
     render() {
         return (
-            <Button size='big' className='askForRevShareButtonStyle' color='orange'> 
+            <Button size='huge' className='askForRevShareButtonStyle' color='orange'> 
                 Ask For Rev Share 
             </Button>
         )

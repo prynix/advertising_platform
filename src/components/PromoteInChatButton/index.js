@@ -7,7 +7,7 @@ import { Button } from 'semantic-ui-react';
 export class PromoteInChatButton extends Component {
     render() {
         return (
-            <Button size='big' className='promoteInChatButtonStyle' color='blue'>
+            <Button size='huge' className='promoteInChatButtonStyle' color='blue'>
                 Promote In Chat
             </Button>
         )

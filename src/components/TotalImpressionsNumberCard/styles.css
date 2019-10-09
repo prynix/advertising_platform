@@ -1,0 +1,8 @@
+.TotalImpressionsNumberCard .content .header, .TotalImpressionsNumberCard .content .meta{
+    position: relative;
+    margin: auto;
+    top: 40%;
+}
+.TotalImpressionsNumberCard .content {
+    padding: 0em 0em !important;
+}

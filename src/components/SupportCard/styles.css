@@ -1,0 +1,8 @@
+.SupportCard .content .header, .SupportCard .content .meta{
+    position: relative;
+    margin: auto;
+    top: 40%;
+}
+.SupportCard .content {
+    padding: 0em 0em !important;
+}

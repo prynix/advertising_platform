@@ -7,7 +7,7 @@ import { Button } from 'semantic-ui-react';
 export class AddTrafficSourceButton extends Component {
     render() {
         return (
-            <Button size='big' className='addTrafficSourceButtonStyle' color='green'>
+            <Button size='huge' className='addTrafficSourceButtonStyle' color='green'>
                Add Traffic Source
             </Button>
         )
