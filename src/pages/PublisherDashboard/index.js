@@ -27,7 +27,7 @@ import { NewOffersCard } from '../../components/NewOffersCard';
 import { WithdrawFundsCard } from '../../components/WithdrawFundsCard';
 import { SupportCard } from '../../components/SupportCard'; 
 
-export class AdvertiserDashboard extends Component {
+export class PublisherDashboard extends Component {
     render() {
         return (
             <Grid columns={6}> 
