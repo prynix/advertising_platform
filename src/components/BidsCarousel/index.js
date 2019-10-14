@@ -14,6 +14,7 @@ export const BidsCarousel = () => {
 
     return (
             <AliceCarousel 
+                mouseDragEnabled={true}
                 className='bidCarousel'
                 responsive={responsive}
                 mouseDragEnabled >

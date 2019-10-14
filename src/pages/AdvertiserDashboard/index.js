@@ -14,87 +14,48 @@ import { MoneyEarnedCard } from '../../components/MoneyEarnedCard';
 import { CampaignClicksCard } from '../../components/CampaignClicksCard';
 import { ImpressionsNumberCard } from '../../components/ImpressionsNumberCard';
 
-import { PublisherNameButton } from '../../components/PublisherNameButton';
-import { BalanceButton } from '../../components/BalanceButton';
-import { MyAccountButton } from '../../components/MyAccountButton';
-import { UserIDButton } from '../../components/UserIDButton';
-import { AdvertiserButton } from '../../components/AdvertiserButton';
-import { TotalClicksCard } from '../../components/TotalClicksCard';
-import { MoneyEarnedButton } from '../../components/MoneyEarnedButton';
-import { TotalImpressionsNumberCard } from '../../components/TotalImpressionsNumberCard';
-import { SocialAccountsCard } from '../../components/SocialAccountsCard';
-import { NewOffersCard } from '../../components/NewOffersCard';
-import { WithdrawFundsCard } from '../../components/WithdrawFundsCard';
-import { SupportCard } from '../../components/SupportCard'; 
-
 export class AdvertiserDashboard extends Component {
     render() {
         return (
-            <Grid columns={6}> 
-                <Grid.Row stretched>
-                    <Grid.Column textAlign='center'>
-                        <Logo />
-                        <PublisherNameButton />
-                        <BalanceButton />
-                    </Grid.Column>
-                    <Grid.Column textAlign='center'>
-                        <WorkTogetherButton/>
-                        <MyAccountButton />
-                        <UserIDButton  />
-                    </Grid.Column>
-                    <Grid.Column textAlign='center' >
-                        <AdvertiserButton /> 
-                        <TotalClicksCard />
-                    </Grid.Column>
-                    <Grid.Column textAlign='center'>
-                        <MoneyEarnedButton />
-                        <TotalImpressionsNumberCard />
-                    </Grid.Column>
-                    <Grid.Column textAlign='center'>
-                        <SocialAccountsCard  />
-                        <NewOffersCard  />
-                    </Grid.Column>
-                    <Grid.Column textAlign='center'>
-                        <WithdrawFundsCard />
-                        <SupportCard  />
-                    </Grid.Column>
+            <Grid columns='equal'>
+                <Grid.Row>
+                    <Grid.Column textAlign='center'> <Logo/> </Grid.Column>
+                    <Grid.Column textAlign='center'> <WorkTogetherButton/> </Grid.Column>
+                    <Grid.Column textAlign='center'><Card link header='Advertiser' meta='Promoted: 78' /></Grid.Column>
+                    <Grid.Column textAlign='center'><Card link header='Money Earned:' meta='$23,450' /></Grid.Column>
+                    <Grid.Column textAlign='center'><Card link header='Social Accounts' /></Grid.Column>
+                    <Grid.Column textAlign='center'><Card link header='Withdraw Funds' /></Grid.Column>
+                </Grid.Row>
+                <Grid.Row>
+                    <Grid.Column textAlign='center'><Card link header='Publisher Name' /></Grid.Column>
+                    <Grid.Column textAlign='center'><Card link header='My Account' /></Grid.Column>
+                    <Grid.Column textAlign='center'><Card link header='Advertiser' meta='Promoted: 78' /></Grid.Column>
+                    <Grid.Column textAlign='center'><Card link header='Money Earned:' meta='$23,450' /></Grid.Column>
+                    <Grid.Column textAlign='center'><Card link header='Social Accounts' /></Grid.Column>
+                    <Grid.Column textAlign='center'><Card link header='Withdraw Funds' /></Grid.Column>
+                </Grid.Row>
+                <Grid.Row>
+                    <Grid.Column textAlign='center'><Card link header='Balance' meta='$5,567' /></Grid.Column>
+                    <Grid.Column><Card link header='User ID:' meta='356674' /></Grid.Column>
+                    <Grid.Column>Computer B Second</Grid.Column>
+                    <Grid.Column textAlign='center'><Card link header='Publisher Name' /></Grid.Column>
                 </Grid.Row>
                 <Grid.Row>
                     <BidsCarousel />
                 </Grid.Row>
-
-                <Grid.Row  columns={4}>
-                    
-                    <Grid.Column >
-                    
+                <Grid.Row>
+                    <Segment>
                         <AskForRevShareButton />
-                         
-                    </Grid.Column>
-                    <Grid.Column >
                         <AddTrafficSourceButton />
-                    </Grid.Column>
-                    <Grid.Column >
                         <PromoteInChatButton />
-                    </Grid.Column>
-                    <Grid.Column >
                         <StopCampaignButton />
-                    </Grid.Column>
-                    
-
-                    
-                        
-                </Grid.Row>
-                <Grid.Row columns={3}>
-                <Grid.Column >
+                    </Segment>
                         <MoneyEarnedCard />
-                    </Grid.Column>
-                <Grid.Column >
+                </Grid.Row>
+                <Grid.Row>
                     <CampaignClicksCard />
-                </Grid.Column>
-                <Grid.Column >
-                    < ImpressionsNumberCard />
-                    </Grid.Column>
-                    </Grid.Row>
+                    <ImpressionsNumberCard />
+                </Grid.Row>
             </Grid>
         )
     }

@@ -1,28 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter, Route} from 'react-router-dom';
+import { CampaignForm } from "./components/CampaignForm";
+import { Container } from 'semantic-ui-react';
 
-import { AdvertiserDashboard } from '../src/pages/AdvertiserDashboard';
-import { NewCampaign } from '../src/pages/NewCampaign';
-
-
-class App extends React.Component {
+class AppCampaign extends React.Component {
     render() {
         return (
-            <BrowserRouter>
-              <Route exact={true} path='/' render={() => (
-                  <AdvertiserDashboard />
-              )}/>
-              <Route exact={true} path='/PublisherDashboard' render={() => (
-                  <NewCampaign />
-              )}/>
-              <Route exact={true} path='/NewCampaign' render={() => (
-                  <NewCampaign />
-              )}/>
-          </BrowserRouter>
-            
+          <Container textAlign='center'>
+            <CampaignForm />
+          </Container>
         );
     }
 }
-ReactDOM.render(<App />, document.getElementById('root'));
- 
+
+ReactDOM.render(<AppCampaign />, document.getElementById('root'));
